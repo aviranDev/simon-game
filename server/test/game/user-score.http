@@ -1,0 +1,26 @@
+@local = http://localhost:3900/api
+
+//save user score
+POST {{local}}/game/save-user-score
+Content-Type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjdiMTlmMjA2YzVhZDg2Y2I5YjcyYzMiLCJpYXQiOjE2NTIyMzQ4NTV9.3Y4-pDMusRZ9fuTk4KJqLlVgDSThzzi98AIeT07Uuic
+
+{
+  "score": 0
+}
+
+###
+
+//updated user score
+PUT {{local}}/game/update-user-score/627b1a9506c5ad86cb9b72ca
+Content-Type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjdiMTlmMjA2YzVhZDg2Y2I5YjcyYzMiLCJpYXQiOjE2NTIyMzQ4NTV9.3Y4-pDMusRZ9fuTk4KJqLlVgDSThzzi98AIeT07Uuic
+
+{
+  "score": 15
+}
+
+
+
+
+

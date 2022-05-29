@@ -1,0 +1,6 @@
+@local = http://localhost:3900/api
+
+//save user score
+GET {{local}}/game/display-all-users-scores
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjdiMTlmMjA2YzVhZDg2Y2I5YjcyYzMiLCJpYXQiOjE2NTIyMzQ4NTV9.3Y4-pDMusRZ9fuTk4KJqLlVgDSThzzi98AIeT07Uuic
+

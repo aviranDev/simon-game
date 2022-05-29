@@ -1,0 +1,17 @@
+@local = http://localhost:3900/api
+
+
+
+//signin
+POST {{local}}/users/signin
+Content-Type: application/json
+
+{
+  "email": "aviranitzhak55@gmail.com",
+  "password": "12345678"
+}
+
+###
+
+GET {{local}}/users/user-profile
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mjg1OGFiNDk5OGMyZmUyYjhkNTQ4NmEiLCJpYXQiOjE2NTI5MjcxNzJ9.fxMxgwhY-_ADVjGRnwj2XeaVhtJ7B4-yg8auPVd6zKA
