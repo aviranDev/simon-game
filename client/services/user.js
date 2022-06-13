@@ -10,6 +10,8 @@ export const signin = async user => {
   } = await axios.post(`${bareURL}/signin`, user);
   try {
     await AsyncStorage.setItem('my_token', token);
+    const myToken = await AsyncStorage.getItem('my_token');
+    return myToken;
   } catch (error) {
     console.log('error: ', error);
   }

@@ -75,8 +75,8 @@ const Signin = ({navigation}) => {
     setTimeout(async () => {
       setLoading(false);
       try {
-        await signin(login);
-        setIsLoggedIn(true);
+        const value = await signin(login);
+        setIsLoggedIn(value);
         navigation.navigate('Simon game');
       } catch (error) {
         if (error.response && error.response.status >= 400) {
